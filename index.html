@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Form</title>
+
+    <!-- Libs -->
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.min.css" />
+    <script type="text/javascript" src="lib/underscore/underscore.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.xdomainrequest.js"></script>
+    <script type="text/javascript" src="lib/jquery.keystrokes.min.js"></script>
+    <script type="text/javascript" src="lib/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="lib/knockout.min.js"></script>
+    <script type="text/javascript" src="lib/ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="lib/ckeditor/adapters/jquery.js"></script>
+    <!-- App -->
+    <link rel="stylesheet" type="text/css" href="app.css" />
+    <script type="text/javascript" src="app.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+    <h1>Form</h1>
+</div>
+
+<!--<div class="container">-->
+    <!--<div class="span12">-->
+        <!--<div class="well">-->
+            <!--Data-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<!--<div class="container">-->
+    <!--<div class="row">-->
+        <!--<div class="span6">-->
+            <!--<form>-->
+                <!--<fieldset class="form-horizontal">-->
+                <!--&lt;!&ndash;<legend>Legend text</legend>&ndash;&gt;-->
+                <!--<div class="control-group">-->
+                <!--<label class="control-label" for="name">Name</label>-->
+                <!--<div class="controls">-->
+                <!--<input type="text" class="input-xlarge" placeholder="name" id="name" name="name" />-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="control-group">-->
+                <!--<label class="control-label" for="email">Email</label>-->
+                <!--<div class="controls">-->
+                <!--<input type="text" class="input-xlarge" id="email" name="name" placeholder="jsmith@gmail.com" />-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--<div class="control-group">-->
+                <!--<label class="control-label" for="email2">Confirm email</label>-->
+                <!--<div class="controls">-->
+                <!--<input type="text" class="input-xlarge" id="email2" name="name" placeholder="same email again">-->
+                <!--<p class="help-block">Supporting help text</p>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</fieldset>-->
+                <!--<fieldset>-->
+                    <!--<div class="control-group">-->
+                        <!--<label class="control-label" for="opus">Message</label>-->
+                        <!--&lt;!&ndash;<textarea rows="8" id="opus" name="opus" class="span6" data-bind="value: opus, valueUpdate: 'keyup', hasFocus: true"></textarea>&ndash;&gt;-->
+                        <!--<p class="help-block" data-bind="greenOrRed: wordCount, maxWords: maxWords"></p>-->
+                    <!--</div>-->
+                <!--</fieldset>-->
+            <!--</form>-->
+        <!--</div>-->
+        <!--<div class="span6">-->
+            <!--<h4>Preview</h4>-->
+            <!--<div class="well" data-bind="html: formattedOpus"></div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</div>-->
+
+<div class="container">
+    <div class="row">
+        <div class="span6">
+            <b>Paste from Word</b>
+            <div id="editor" data-bind="value: opus"></div>
+            <p class="help-block" data-bind="greenOrRed: wordCount, maxWords: maxWords"></p>
+        </div>
+        <div class="span6">
+            <h4>Preview</h4>
+            <div class="well" id="formattedOpus" data-bind="html: formattedOpus"></div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="span6">
+            <b>Raw Source</b>
+            <pre data-bind="text: opus"></pre>
+        </div>
+        <div class="span6">
+            <b>Cleaned up source</b>
+            <pre data-bind="text: formattedOpus"></pre>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+
+.help-block {
+   color: gray;
+   font-style: italic;
+   font-size: 90%;
+   margin-top: -10px;
+}
+
+label {
+   margin-bottom: 2px;
+   font-weight: bold;
+}
+
+label:hover {
+   color: rgb(82, 168, 236);
+   cursor: pointer;
+}
+
+body form input::-webkit-input-placeholder,
+body form textarea::-webkit-input-placeholder {
+   color: #DBC191;
+}
+
+body form input:-moz-placeholder,
+body form textarea:-moz-placeholder {
+   color: #DBC191;
+}
+
+.good {
+   color: #060;
+}
+
+.bad {
+   color: #600;
+   background-color: #FF0;
+}
